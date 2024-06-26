@@ -124,3 +124,38 @@ A exibição do saldo é realizada de duas formas diferentes:
 1. Saldo na moeda passado por parâmetro.
 
 Para o saldo de uma determinada moeda passada por parâmetro, a operação deverá retornar o montante total da conta na moeda no qual o saldo está sendo solicitado, sendo necessário converter o valor caso a moeda do saldo na conta seja diferente da moeda solicitada.
+
+## Testes Unitários
+
+🗂️ Tests\Features
+
+Neste pacote esta situado a classe ContaControllerTest, onde estão todos os testes unitários para cada uma das funções.
+
+Para testar a função que CADASTRA UMA CONTA digite o código:
+```
+    php artisan test --filter testCadastraConta
+```
+
+Para testar a função de DEPÓSITO digite os seguintes códigos:
+
+```
+    php artisan test --filter testDepositoComSucesso
+    php artisan test --filter testDepositoEmMoedaInexistente
+```
+
+Para testar a função de SAQUE digite:
+```
+    php artisan test --filter testSaqueComSucesso
+```
+
+Para testar a função de SALDO digite os códigos:
+
+```
+    php artisan test --filter testExibirSaldoTodasMoedas
+    php artisan test --filter testExibirSaldoMoedaEspecifica
+```
+Caso queira realizar todos os testes de uma vez digite:
+
+```
+    php artisan test --filter ContaControllerTest
+```
