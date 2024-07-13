@@ -63,6 +63,10 @@ Após realizar a instalação dos programas, siga os passos abaixo:
     "APP_TIMEZONE="America/Sao_Paulo
     "DB_DATABASE="nome_da_sua_database
 ```
+  * Digite o comando abaixo para instalar o composer:
+```
+    composer install
+```
   * Além disso, gere uma "APP_KEY". O código para gerar essa função é:
 
 ```
@@ -71,6 +75,10 @@ Após realizar a instalação dos programas, siga os passos abaixo:
 2- Inicie os servidores Apache e MySQL via XAMPP e digite o comando abaixo para criação das tabelas no banco de dados:
 ```
     php artisan migrate
+```
+  *Também inicie o servidor da sua aplicação digitando:
+```
+   php artisan serve
 ```
 3- Realizando os passos 1 e 2 você já está apto para começar a usar a aplicação via Postman e criar sua primeira conta através da requisição "GET" usando o seguinte link: 
 ```

@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('tipo', 45);
             $table->double('valor')->nullable();
             $table->string('moeda', 45);
-            // $table->date('data')->nullable();
             $table->timestamps();
             $table->foreign('conta_numeroDaConta')->references('numeroDaConta')->on('conta')
                 ->onDelete('no action')
